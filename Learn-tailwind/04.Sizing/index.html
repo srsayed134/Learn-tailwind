@@ -35,7 +35,7 @@
      <!-- Width of the viewport  -->
       <h1 class="mt-5">VW & Width 100%</h1>
       <div class="bg-green-500 my-2 p-5 w-screen">(VW) screen</div>
-      <div class="bg-green-500 my-2 p-5 w-fill">(width 100%)w-full </div>
+      <div class="bg-green-500 my-2 p-5 w-fill">(width 100%)w-full </div> //parent fill 
 
       <!-- Arbitrary width  -->
        <div class="bg-teal-500 text-white my-2 w-[500px]">Arbitrary Width (500px) </div>
@@ -43,32 +43,34 @@
 
        <!-- Height  -->
     <h1 class="mt-5">Height</h1>
-    <div class="flex item-end mt-20 mb-10">
+    <div class="flex item-end mt-10 mb-10 bg-red-300">
         <div class="bg-indigo-400 ml-5 h-24">Height 24</div>
         <div class="bg-indigo-400 ml-5 h-32">Height 32</div>
-        <div class="bg-indigo-400 ml-5 h-[200px]">Height 40</div>
+        <div class="bg-indigo-400 ml-5 h-[200px]">Height 200px</div> <!--  <like arbitrary> -->
         <div class="bg-indigo-400 ml-5 h-48">Height 48</div>
         <div class="bg-indigo-400 ml-5 h-58">Height 58</div>
     </div>
     <!-- Min-Height  -->
 
        <h1 class="mt-5">Min Height Full</h1>
-       <div class="p-5 h-[400px] bg-green-300 mb-5">
-        <div class="min-h-full bg-teal-400">Take full height</div>
+       <div class="p-5 h-[300px] bg-green-300 mb-5">
+        <div class="min-h-full bg-teal-400">Take full height of parent</div>
        </div>
-    <!-- Max-height  -->
 
+    <!-- Max-height  -->
+    
     <div class="h-[150px] bg-orange-300 mb-5">
+        <h1>This is an example of maximun height without m-20 mean (margin 20)</h1>
         <div class="m-20 bg-orange-500 h-48 max-h-full">Max height full</div>
 
-        <h1>This is an example of maximun height without m-20 mean (margin 20)</h1>
-        <div class=" bg-orange-500 h-48 max-h-full">Max height full</div>
+        <div class=" bg-orange-700 h-48 max-h-full">Max height full</div>
     </div>
-    
+
+    <div>
     <!-- Full screen height  -->
      <h1 class="mb-2">Full screen Height</h1>
      <div class="bg-pink-300 mb-4 h-screen">Hello i am covered with full screen</div>
-
+    </div>
     <!-- Width auto  -->
      <h1>Thi will auto adjust with width</h1>
      <div class="bg-green-400 p-5 w-auto">Auto</div>
